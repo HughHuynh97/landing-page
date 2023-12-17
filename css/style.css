@@ -9748,3 +9748,11 @@ a.logo-box {
   font-size: 12px;
   background-color: #E8F4F3;
 }
+.instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+  background-clip: text;
+  border-radius: 8px;
+  -webkit-background-clip: text;
+}
