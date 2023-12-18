@@ -142,6 +142,28 @@
         "transform": "rotateY("+(-currdeg)+"deg)"
     });
     }
+
+
+    function updateTimer() {
+        var now = new Date();
+        var futureDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0); // Set the future date and time
+
+        var timeDiff = futureDate - now;
+
+        var hours = Math.floor(timeDiff / (1000 * 60 * 60));
+        var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+        document.getElementById("hours").innerHTML = `<div> <strong> ${hours.toString().padStart(2, '0')} </strong></div><div style="font-size:11px">Giờ</div>`;
+        document.getElementById("minutes").innerHTML = `<div> <strong> ${minutes.toString().padStart(2, '0')} </strong></div><div style="font-size:11px">Phút</div>`;
+        document.getElementById("seconds").innerHTML = `<div> <strong> ${seconds.toString().padStart(2, '0')} </strong></div><div style="font-size:11px">Giây</div>`;
+    }
+
+    // Update the timer every second
+    setInterval(updateTimer, 1000);
+
+    // Initial call to display the timer immediately
+    updateTimer();
         
 })(jQuery);
 
