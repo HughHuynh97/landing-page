@@ -107,6 +107,41 @@
         loop: true,
         items: 1
     });
-    
+
+    var carousel = $(".carousel2"),
+    items = $(".item"),
+    currdeg  = 0;
+
+    // Khai báo biến để lưu trữ giá trị random
+    var randomValue;
+
+    function updateRandomValue() {
+        randomValue = Math.floor(Math.random() * 360);
+        rotate({ data: { d: "n" } });
+    }
+
+    setInterval(updateRandomValue, 2000);
+
+    function rotate(e){
+    if(e.data.d=="n"){
+        currdeg = currdeg - 60;
+    }
+    if(e.data.d=="p"){
+        currdeg = currdeg + 60;
+    }
+    carousel.css({
+        "-webkit-transform": "rotateY("+currdeg+"deg)",
+        "-moz-transform": "rotateY("+currdeg+"deg)",
+        "-o-transform": "rotateY("+currdeg+"deg)",
+        "transform": "rotateY("+currdeg+"deg)"
+    });
+        items.css({
+        "-webkit-transform": "rotateY("+(-currdeg)+"deg)",
+        "-moz-transform": "rotateY("+(-currdeg)+"deg)",
+        "-o-transform": "rotateY("+(-currdeg)+"deg)",
+        "transform": "rotateY("+(-currdeg)+"deg)"
+    });
+    }
+        
 })(jQuery);
 
