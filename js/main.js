@@ -76,26 +76,6 @@
     });
 
 
-    // Pricing carousel
-    $(".pricing-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        margin: 30,
-        loop: true,
-        dots: false,
-        nav : false,
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            }
-        }
-    });
 
 
     // Testimonials carousel
@@ -107,6 +87,7 @@
         loop: true,
         items: 1
     });
+    
 
     var carousel = $(".carousel2"),
     items = $(".item"),
