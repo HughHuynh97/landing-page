@@ -9931,3 +9931,38 @@ a.logo-box {
 .testimonial-carousel .owl-dots {
   display: none;
 }
+
+.text-flash {
+  text-shadow: 1px 1px 10px;
+}
+
+.button-flash {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+@-webkit-keyframes glowing {
+  0% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+  50% { background-color: #00a8a6; box-shadow: 0 0 50px #00a8a6; }
+  100% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+  50% { background-color: #00a8a6; box-shadow: 0 0 50px #00a8a6; }
+  100% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+  50% { background-color: #00a8a6; box-shadow: 0 0 50px #00a8a6; }
+  100% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+}
+
+@keyframes glowing {
+  0% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+  50% { background-color: #00a8a6; box-shadow: 0 0 50px #00a8a6; }
+  100% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+}
