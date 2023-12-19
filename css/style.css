@@ -534,6 +534,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  aspect-ratio: 5/6;
 }
 
 .img-thumbnail {
@@ -9909,4 +9910,20 @@ a.logo-box {
   height: 50px;
   border-radius: 12px;
   box-shadow: 2px 2px gainsboro;
+}
+
+.marquee {
+  white-space: nowrap; /* Ngăn chữ xuống dòng */
+  overflow: hidden; /* Ẩn nội dung dư thừa */
+  position: absolute;
+  animation: marquee 20s linear infinite; /* Tạo animation với tên là 'marquee', thời gian chạy 5 giây, kiểu chuyển động linear và lặp vô hạn */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-150%); /* Di chuyển về bên trái */
+  }
+  to {
+    transform: translateX(200%); /* Di chuyển về bên phải */
+  }
 }
