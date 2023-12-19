@@ -9924,7 +9924,7 @@ a.logo-box {
     transform: translateX(-150%); /* Di chuyển về bên trái */
   }
   to {
-    transform: translateX(100%); /* Di chuyển về bên phải */
+    transform: translateX(150%); /* Di chuyển về bên phải */
   }
 }
 
