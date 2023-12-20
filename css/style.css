@@ -47,6 +47,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -9924,7 +9925,7 @@ a.logo-box {
     transform: translateX(-150%); /* Di chuyển về bên trái */
   }
   to {
-    transform: translateX(150%); /* Di chuyển về bên phải */
+    transform: translateX(250%); /* Di chuyển về bên phải */
   }
 }
 
@@ -9982,4 +9983,69 @@ a.logo-box {
   0% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
   50% { background-color: #00a8a6; box-shadow: 0 0 50px #00a8a6; }
   100% { background-color: #00a8a6; box-shadow: 0 0 5px #00a8a6; }
+}
+/* Media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media only screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .buy-text {
+    font-size: 25px !important;
+  }
+  .start-standard, .doctor-img {
+    height: auto !important;
+  }
+  .doctor-line {
+    width: 25% !important;
+    margin-top: -45px !important;
+  }
+  .doctor-line-2 {
+    width: 30% !important;
+    margin-top: -45px !important;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(-75%); /* Di chuyển về bên trái */
+    }
+    to {
+      transform: translateX(75%); /* Di chuyển về bên phải */
+    }
+  }
+}
+
+.buy-text {
+  font-size: 35px;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #211E1C;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.start-standard {
+  object-fit: scale-down;
+  height: 450px;
+}
+.doctor-img {
+  object-fit: scale-down;
+  height: 450px;
+}
+.doctor-line {
+  width: 40%;
+  position: absolute;
+  margin-top: -65px;
+  background: rgb(0, 168, 166);
+  height: 5px; 
+  left: 0;
+}
+.doctor-line-2 {
+  width: 42%;
+  position: absolute;
+  margin-top: -65px;
+  background: rgb(0, 168, 166);
+  height: 5px; 
+  right: 0;
 }
