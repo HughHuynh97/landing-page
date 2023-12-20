@@ -10031,6 +10031,17 @@ a.logo-box {
   .beauty-text {
     font-size: 15px !important;
   }
+
+  .doctor-line-popup {
+    width: 28% !important;
+    margin-top: -43px !important;
+    background: rgb(0, 168, 166);
+  }
+
+  .doctor-line-popup-2 {
+    width: 30% !important;
+    margin-top: -44px !important;
+  }
 }
 .popup-text {
   font-size: 14px !important;
@@ -10112,4 +10123,32 @@ a.logo-box {
   -webkit-text-fill-color: rgb(0, 168, 166);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: cadetblue;
+}
+.popup-title-text-2 {
+  font-size: 25px !important;
+  color: black;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: cadetblue;
+}
+
+.popup-title-text-3 {
+  font-size: 20px !important;
+  color: black;
+}
+.doctor-line-popup {
+  width: 30%;
+  position: absolute;
+  margin-top: -82px;
+  background: rgb(0, 168, 166);
+  height: 5px;
+  left: 0;
+}
+.doctor-line-popup-2 {
+  width: 33%;
+  position: absolute;
+  margin-top: -83px;
+  background: rgb(0, 168, 166);
+  height: 5px;
+  right: 0;
 }

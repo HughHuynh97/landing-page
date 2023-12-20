@@ -1,5 +1,9 @@
 (function ($) {
     "use strict";
+
+    $(window).on('load', function() {
+        $('#staticBackdrop').modal('show');
+    });
     
     // Dropdown on mouse hover
     $(document).ready(function () {
