@@ -10042,6 +10042,13 @@ a.logo-box {
     width: 30% !important;
     margin-top: -44px !important;
   }
+
+  .background-desktop {
+    display: none !important;
+  }
+  .background-mobile {
+    display: block !important;
+  }
 }
 .popup-text {
   font-size: 14px !important;
@@ -10151,4 +10158,7 @@ a.logo-box {
   background: rgb(0, 168, 166);
   height: 5px;
   right: 0;
+}
+.background-mobile {
+  display: none;
 }
