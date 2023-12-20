@@ -10040,7 +10040,7 @@ a.logo-box {
 
   .doctor-line-popup-2 {
     width: 31% !important;
-    margin-top: -32px !important;
+    margin-top: -33px !important;
   }
 
   .background-desktop {
@@ -10078,7 +10078,7 @@ a.logo-box {
 .doctor-line {
   width: 40%;
   position: absolute;
-  margin-top: -65px;
+  margin-top: -85px;
   background: rgb(0, 168, 166);
   height: 5px; 
   left: 0;
@@ -10086,7 +10086,7 @@ a.logo-box {
 .doctor-line-2 {
   width: 42%;
   position: absolute;
-  margin-top: -65px;
+  margin-top: -85px;
   background: rgb(0, 168, 166);
   height: 5px; 
   right: 0;
@@ -10154,7 +10154,7 @@ a.logo-box {
 .doctor-line-popup-2 {
   width: 33%;
   position: absolute;
-  margin-top: -71px;
+  margin-top: -72px;
   background: rgb(0, 168, 166);
   height: 5px;
   right: 0;
