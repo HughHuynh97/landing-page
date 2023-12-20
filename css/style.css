@@ -10011,7 +10011,35 @@ a.logo-box {
       transform: translateX(75%); /* Di chuyển về bên phải */
     }
   }
+  .infrastructure {
+    text-align: center !important;
+  }
+  .infrastructure-line {
+    display: none !important;
+  }
+  .form-popup {
+    background: transparent !important;
+  }
+  .popup-selection {
+    background-image: url(../img/background-selection-3.png) !important;
+    background: round;
+    margin-bottom: 0rem !important;
+  }
+  .consultation-text {
+    font-size: 20px !important;
+  }
+  .beauty-text {
+    font-size: 15px !important;
+  }
 }
+
+.popup-selection {
+  margin-bottom: 3rem !important;
+}
+.popup-text {
+  font-size: 14px !important;
+}
+
 
 .buy-text {
   font-size: 35px;
@@ -10048,4 +10076,44 @@ a.logo-box {
   background: rgb(0, 168, 166);
   height: 5px; 
   right: 0;
+}
+.infrastructure {
+  color: rgb(0, 168, 166);
+  font-size: 25px;
+  font-weight: bold;
+}
+.infrastructure-line {
+  width: 100%;
+  position: absolute;
+  margin-top: 20px;
+  background: rgb(0, 168, 166);
+  height: 5px;
+  left: 0;
+}
+.consultation-text {
+  color: rgb(0, 168, 166);
+  font-size: 40px;
+  font-weight: bold;
+}
+.form-popup {
+  background-image: url(../img/background-selection-3.png);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.beauty-text {
+  color: rgb(0, 168, 166);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.popup-text {
+  font-weight: bold;
+}
+
+.popup-title-text {
+  color: rgb(0, 168, 166);
+  -webkit-text-fill-color: rgb(0, 168, 166);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: cadetblue;
 }
